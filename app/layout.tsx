@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 } },
   openGraph: { title: 'Laiser Hill Academy | International, Senior & Private Primary School in Kenya', description: 'Discover academic pathways from kindergarten and private primary school to senior school, IGCSE and A Levels at Laiser Hill Academy.', type: 'website', url: siteUrl, siteName: 'Laiser Hill Academy', locale: 'en_KE' },
   twitter: { card: 'summary_large_image', title: 'Laiser Hill Academy', description: 'International, senior and private primary school education in Kenya.' },
+  icons: { icon: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lha%20logo1.jpg-Ny2BLBK48cSEwEsOr1xjX9cnUe5xE6.png', shortcut: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lha%20logo1.jpg-Ny2BLBK48cSEwEsOr1xjX9cnUe5xE6.png', apple: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lha%20logo1.jpg-Ny2BLBK48cSEwEsOr1xjX9cnUe5xE6.png' },
 }
 export const viewport: Viewport = { colorScheme: 'light', themeColor: '#3D3BF3', width: 'device-width', initialScale: 1 }
 const structuredData = {
