@@ -1,0 +1,95 @@
+.fees-page .fees-toc {
+  border: 1px solid var(--border);
+  padding: 18px 22px;
+  margin: 0 0 22px;
+  background: var(--lavender);
+}
+
+.fees-page .fees-toc-title {
+  margin: 0 0 10px;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.fees-page .fees-toc ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fees-page .fees-toc a {
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.fees-page .fees-toc a:hover { color: var(--red); }
+.fees-page .fees-actions { display: flex; justify-content: flex-end; margin-bottom: 20px; }
+.fees-page .fees-print-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 0;
+  padding: 12px 18px;
+  background: var(--red);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.fees-page .fees-content-section { scroll-margin-top: 125px; }
+.fees-page .fees-content-section:first-of-type h2 { margin-top: 0; }
+.fees-page .fees-detail-label { margin: -6px 0 16px; color: var(--muted); font-size: 14px; font-weight: 700; }
+.fees-page .fee-subheading { margin: 30px 0 14px; color: var(--blue); font-size: 20px; }
+.fees-page .fees-note, .fees-page .fees-list { color: var(--muted); line-height: 1.75; }
+.fees-page .fees-note { margin: 18px 0 0; }
+.fees-page .fees-list { padding-left: 24px; }
+.fees-page .fees-list li { padding-left: 4px; margin: 0 0 10px; }
+.fees-page .payment-notice {
+  margin: 0 0 22px;
+  border-left: 4px solid var(--blue);
+  padding: 18px 20px;
+  background: var(--violet);
+  color: var(--ink);
+  font-weight: 800;
+  line-height: 1.6;
+}
+.fees-page .fee-table-wrap { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+
+@media (max-width: 800px) {
+  .fees-page .fees-toc { padding: 16px; }
+  .fees-page .fees-toc ul { gap: 10px 14px; }
+  .fees-page .fees-actions { justify-content: flex-start; }
+  .fees-page .fee-table-wrap { margin-right: -2px; }
+}
+
+@media print {
+  @page { margin: 14mm; }
+  .fees-page .utility,
+  .fees-page .content-main-header .nav,
+  .fees-page .content-backbar,
+  .fees-page .content-footer,
+  .fees-page .fees-print-button { display: none !important; }
+  .fees-page,
+  .fees-page .fees-section { background: #fff !important; color: #000 !important; }
+  .fees-page .fees-section { padding: 0 !important; }
+  .fees-page .wide { width: 100% !important; margin: 0 !important; }
+  .fees-page .fees-toc { padding: 10px !important; margin-bottom: 12px !important; }
+  .fees-page .fees-toc ul { gap: 4px 12px !important; }
+  .fees-page .fees-content-section { break-inside: auto; }
+  .fees-page .fees-content-section h2,
+  .fees-page .fee-subheading { break-after: avoid; }
+  .fees-page .fee-table-wrap { overflow: visible !important; break-inside: avoid; }
+  .fees-page .fee-table-wrap table { width: 100% !important; min-width: 0 !important; table-layout: auto; }
+  .fees-page .fee-table-wrap th,
+  .fees-page .fee-table-wrap td { padding: 6px 8px !important; color: #000 !important; font-size: 9pt !important; }
+  .fees-page .fee-table-wrap tr { break-inside: avoid; }
+  .fees-page .payment-notice { background: #fff !important; color: #000 !important; border: 1px solid #000; border-left: 4px solid #000; }
+  .fees-page a { color: #000 !important; text-decoration: none !important; }
+}
