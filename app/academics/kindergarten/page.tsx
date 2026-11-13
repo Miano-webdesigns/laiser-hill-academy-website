@@ -1,4 +1,14 @@
 import content from '@/data/school-content.json'
+import { BreadcrumbJsonLd } from '@/components/breadcrumb-json-ld'
 import { SchoolContentPage } from '@/components/school-content-page'
-export default function KindergartenPage() { return <SchoolContentPage content={content.kindergarten} /> }
-export const metadata = { title: 'Kindergarten | Laiser Hill Academy', description: 'Discover Kindergarten and Early Years learning at Laiser Hill Academy.' }
+import { createPageMetadata } from '@/lib/site'
+
+export const metadata = createPageMetadata({
+  path: '/academics/kindergarten',
+  title: 'Kindergarten in Ongata Rongai (CBC, Ages 3–6)',
+  description: 'Laiser Hill Academy in Ongata Rongai offers CBC kindergarten for ages 3–6, play-based early learning, caring teachers, and admissions guidance for families.',
+})
+
+export default function KindergartenPage() {
+  return <><BreadcrumbJsonLd items={[{ name: 'Home', path: '/' }, { name: 'Kindergarten', path: '/academics/kindergarten' }]} /><SchoolContentPage content={content.kindergarten} /></>
+}

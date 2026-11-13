@@ -1,7 +1,8 @@
 import Link from 'next/link'
 import { ArrowRight, Download } from 'lucide-react'
+import { createPageMetadata } from '@/lib/site'
 
-export const metadata = { title: 'Fees Structure 2026 | Laiser Hill Academy', description: 'View Laiser Hill Academy 2026 primary, secondary and international school fees, payment procedures and downloadable fee structures.' }
+export const metadata = createPageMetadata({ path: '/admissions/fees', title: 'School Fees 2026 in Ongata Rongai', description: 'Laiser Hill Academy in Ongata Rongai lists 2026 fees for CBC, CBE, IGCSE and A Level programmes, with tuition, boarding costs and downloadable schedules.' })
 
 const primaryRows = [['Play Group','Kshs. 36,900','N/A'],['PP1 & PP2','Kshs. 49,860','N/A'],['Grade 1, 2 & 3','Kshs. 61,860','N/A'],['Grade 4, 5 & 6','Kshs. 68,850','Kshs. 95,000'],['Grade 7 & 8','Kshs. 78,000','Kshs. 110,000']]
 const secondaryRows = [['CBE','Grade 9','Kshs. 88,000','Kshs. 110,000'],['CBE','Grade 10','Kshs. 88,000','Kshs. 110,000'],['KCSE','Form 3','Kshs. 113,020','Kshs. 150,950'],['KCSE','Form 4','Kshs. 113,020','Kshs. 150,950'],['IGCSE','Year 8 & 9','Kshs. 115,730','Kshs. 149,800'],['IGCSE','Year 10 & 11','Kshs. 116,774','Kshs. 154,021'],['A-Levels (IAL)','Year 12 & 13','Kshs. 96,300','Kshs. 145,000']]
